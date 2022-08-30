@@ -2,11 +2,11 @@ import React from "react"
 import View from "./View"
 import { getCurrentUser } from "../utils/auth"
 
-const Details = () => {
+const AppML = () => {
   const { name, legalName, email } = getCurrentUser()
 
   return (
-    <View title="Your Details">
+    <View title="Your AppML">
       <p>
         This is a client-only route. You can get additional information about a
         user on the client from this page.
@@ -20,4 +20,4 @@ const Details = () => {
   )
 }
 
-export default Details
+export default AppML

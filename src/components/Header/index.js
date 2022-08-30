@@ -24,8 +24,8 @@ const Header = () => (
         <Link to="/app/profile" className={header__link}>
           Profile
         </Link>
-        <Link to="/app/details" className={header__link}>
-          Details
+        <Link to="/app/ml" className={header__link}>
+          App
         </Link>
       </nav>
     </div>
