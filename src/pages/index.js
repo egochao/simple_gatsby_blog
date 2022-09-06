@@ -3,6 +3,11 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import View from "../components/View"
 import Status from "../components/Status"
+import { Amplify } from "aws-amplify";
+import config from '../aws-exports'
+
+Amplify.configure(config)
+
 
 const Index = () => (
   <Layout>
