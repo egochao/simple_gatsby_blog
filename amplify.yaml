@@ -6,6 +6,10 @@ frontend:
         - npm install
     build:
       commands:
+        - echo "GATSBY_USER_POOL_ID=$GATSBY_USER_POOL_ID" >> .env 
+        - echo "GATSBY_USER_POOL_CLIENT_ID=$GATSBY_USER_POOL_CLIENT_ID" >> .env 
+        - echo "GATSBY_IDENTITY_POOL_ID=$GATSBY_IDENTITY_POOL_ID" >> .env 
+        - echo "GATSBY_COGNITO_REGION=$GATSBY_COGNITO_REGION" >> .env 
         - npm run build
   artifacts:
     baseDirectory: public
