@@ -7,11 +7,10 @@ frontend:
     build:
       commands:
         - npm run build
-        - echo "REACT_APP_USER_POOL_ID=$REACT_APP_USER_POOL_ID" >> .env 
-        - echo "REACT_APP_USER_POOL_CLIENT_ID=$REACT_APP_USER_POOL_CLIENT_ID" >> .env 
-        - echo "REACT_APP_IDENTITY_POOL_ID=$REACT_APP_IDENTITY_POOL_ID" >> .env 
-        - echo "REACT_APP_COGNITO_REGION=$REACT_APP_COGNITO_REGION" >> .env 
-        - ./export-env.sh
+        - echo "GATSBY_USER_POOL_ID=$GATSBY_USER_POOL_ID" >> .env 
+        - echo "GATSBY_USER_POOL_CLIENT_ID=$GATSBY_USER_POOL_CLIENT_ID" >> .env 
+        - echo "GATSBY_IDENTITY_POOL_ID=$GATSBY_IDENTITY_POOL_ID" >> .env 
+        - echo "GATSBY_COGNITO_REGION=$GATSBY_COGNITO_REGION" >> .env 
   artifacts:
     baseDirectory: public
     files:
